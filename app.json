@@ -22,7 +22,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.mustaphabousil.offlinewallet"
     },
     "web": {
       "bundler": "metro",
@@ -35,6 +36,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "03141175-b9ca-408e-85cf-f92a4bd06d17"
+      }
     }
   }
 }
