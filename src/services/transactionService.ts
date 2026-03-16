@@ -25,10 +25,13 @@ export class TransactionService {
       version: 1,
     };
 
+    // save transaction locally
     TransactionRepo.save(transaction);
 
+    // update wallit snapshot
     this.updateWalletSnapshot(transaction);
 
+    // add queue item for sync
     const queueItem: SyncQueueItem = {
       id: txId,
       transactionId: txId,
